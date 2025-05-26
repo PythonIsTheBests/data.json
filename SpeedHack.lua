@@ -8,7 +8,7 @@
           \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
 
 ]]--
-
+-- for Climb and Jump
 local v0 = string.char;
 local v1 = string.byte;
 local v2 = string.sub;
