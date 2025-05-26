@@ -1,74 +1,12 @@
-local po = 0
-function CreateStyledButton(parent, text, callback)
-	local button = Instance.new("TextButton")
-	button.Size = UDim2.new(1, -10, 0, 30)
-	button.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-	button.TextColor3 = Color3.new(1, 1, 1)
-	button.Font = Enum.Font.SourceSansBold
-	button.TextSize = 18
-	button.Text = text
-	button.BorderSizePixel = 0
-	button.RichText = true
-	button.Parent = parent
-	button.AutoButtonColor = false
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
 
-	button.MouseEnter:Connect(function()
-		button.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
-	end)
-	button.MouseLeave:Connect(function()
-		button.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
-	end)
+]]--
 
-	button.MouseButton1Click:Connect(callback)
-
-	return button
-end
-
-function CreateTitleLabel(parent, text)
-	local label = Instance.new("TextLabel")
-	label.Size = UDim2.new(1, -10, 0, 30)
-	label.BackgroundTransparency = 1
-	label.TextColor3 = Color3.new(1, 1, 1)
-	label.Font = Enum.Font.SourceSansBold
-	label.TextSize = 20
-	label.Text = text
-	label.RichText = true
-	label.TextXAlignment = Enum.TextXAlignment.Center
-	label.Parent = parent
-	return label
-end
-local screenGui = Instance.new("ScreenGui", game.Players.LocalPlayer:WaitForChild("PlayerGui"))
-screenGui.Name = "Cheat BRUHHHH"
-
-local frame = Instance.new("Frame")
-frame.Size = UDim2.new(0, 200, 0, 300)
-frame.Position = UDim2.new(0, 20, 0.5, -200)
-frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-frame.BorderSizePixel = 0
-frame.Parent = screenGui
-local uidrag = Instance.new("UIDragDetector")
-uidrag.Parent = frame
-frame.Draggable = true
-
-local layout = Instance.new("UIListLayout", frame)
-layout.Padding = UDim.new(0, 5)
-layout.FillDirection = Enum.FillDirection.Vertical
-layout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-layout.SortOrder = Enum.SortOrder.LayoutOrder
-
-CreateTitleLabel(frame, "Climb and Jump Tower")
-CreateTitleLabel(frame, 'Main')
-CreateStyledButton(frame, "Speed hack", function()
-	game.Players.LocalPlayer:WaitForChild("AvatarSpeed").Value = 99999999999999
-end)
-CreateTitleLabel(frame, 'Get Free Gamepass')
-CreateStyledButton(frame, "Get Fast Hatch", function()
-	game.Players.LocalPlayer:WaitForChild("GamePass"):WaitForChild("Fast-Hatch").Value = 1
-end)
-
-CreateTitleLabel(frame, 'By: Script_exe03')
-
-CreateStyledButton(frame, "Delete Gui", function()
-	screenGui:Destroy()
-	loop = false
-end)
+local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v28,v29) local v30={};for v44=1, #v28 do v6(v30,v0(v4(v1(v2(v28,v44,v44 + 1 )),v1(v2(v29,1 + (v44% #v29) ,1 + (v44% #v29) + 1 )))%256 ));end return v5(v30);end local v8=0 -0 ;function CreateStyledButton(v31,v32,v33) local v34=0;local v35;while true do local v45=0 -0 ;while true do if (v45==(1263 -(1091 + 171))) then if (v34==(1 + 0)) then v35.TextColor3=Color3.new(1 -0 ,3 -2 ,3 -2 );v35.Font=Enum.Font.SourceSansBold;v35.TextSize=53 -35 ;v34=1 + 1 ;end if (v34==4) then v35.MouseLeave:Connect(function() v35.BackgroundColor3=Color3.fromRGB(165 -105 ,235 -175 ,1 + 59 );end);v35.MouseButton1Click:Connect(v33);return v35;end v45=1 + 1 ;end if (v45==(0 + 0)) then if (v34==3) then local v51=0 + 0 ;while true do if (v51==1) then v35.MouseEnter:Connect(function() v35.BackgroundColor3=Color3.fromRGB(1145 -(87 + 968) ,292 -(14 + 188) ,765 -(534 + 141) );end);v34=17 -13 ;break;end if (v51==(0 + 0)) then v35.Parent=v31;v35.AutoButtonColor=false;v51=1 + 0 ;end end end if (v34==(4 -2)) then v35.Text=v32;v35.BorderSizePixel=1413 -(447 + 966) ;v35.RichText=true;v34=8 -5 ;end v45=1818 -(1703 + 114) ;end if (v45==(5 -3)) then if (v34==0) then v35=Instance.new(v7("\229\198\195\49\196\174\211\10\222\205","\126\177\163\187\69\134\219\167"));v35.Size=UDim2.new(702 -(376 + 325) , -(16 -6),396 -(115 + 281) ,92 -62 );v35.BackgroundColor3=Color3.fromRGB(139 -79 ,50 + 10 ,18 + 42 );v34=2 -1 ;end break;end end end end function CreateTitleLabel(v36,v37) local v38=14 -(9 + 5) ;local v39;while true do local v46=0 -0 ;while true do if (v46==(377 -(85 + 291))) then if (v38==(1266 -(243 + 1022))) then v39.Font=Enum.Font.SourceSansBold;v39.TextSize=20;v39.Text=v37;v39.RichText=true;v38=2;end break;end if (v46==(0 -0)) then if (v38==(5 -3)) then v39.TextXAlignment=Enum.TextXAlignment.Center;v39.Parent=v36;return v39;end if (v38==(0 + 0)) then v39=Instance.new(v7("\23\200\50\209\208\34\207\47\201","\156\67\173\74\165"));v39.Size=UDim2.new(1181 -(1123 + 57) , -(19 -9),0 + 0 ,284 -(163 + 91) );v39.BackgroundTransparency=1931 -(1869 + 61) ;v39.TextColor3=Color3.new(1 + 0 ,3 -2 ,1 -0 );v38=1 + 0 ;end v46=1 -0 ;end end end end local v9=Instance.new(v7("\7\180\91\19\185\40\97\33\190","\38\84\215\41\118\220\70"),game.Players.LocalPlayer:WaitForChild(v7("\96\26\35\11\251\66\49\55\27","\158\48\118\66\114")));v9.Name=v7("\136\44\21\55\103\229\217\153\17\56\30\91\141","\155\203\68\112\86\19\197");local v11=Instance.new(v7("\96\207\55\241\69","\152\38\189\86\156\32\24\133"));v11.Size=UDim2.new(0 + 0 ,141 + 59 ,1474 -(1329 + 145) ,1271 -(140 + 831) );v11.Position=UDim2.new(1850 -(1409 + 441) ,738 -(15 + 703) ,0.5 + 0 , -(638 -(262 + 176)));v11.BackgroundColor3=Color3.fromRGB(1751 -(345 + 1376) ,718 -(198 + 490) ,132 -102 );v11.BorderSizePixel=0 -0 ;v11.Parent=v9;local v17=Instance.new(v7("\201\126\131\84\253\80\131\67\232\82\164\82\243\69","\38\156\55\199"));v17.Parent=v11;v11.Draggable=true;local v20=Instance.new(v7("\157\84\80\33\0\96\214\66\177\114\105\60","\35\200\29\28\72\115\20\154"),v11);v20.Padding=UDim.new(0 -0 ,5);v20.FillDirection=Enum.FillDirection.Vertical;v20.HorizontalAlignment=Enum.HorizontalAlignment.Center;v20.SortOrder=Enum.SortOrder.LayoutOrder;CreateTitleLabel(v11,v7("\58\179\216\210\143\108\53\23\187\145\245\152\33\36\89\139\222\200\136\62","\84\121\223\177\191\237\76"));CreateTitleLabel(v11,v7("\150\87\192\174","\161\219\54\169\192\90\48\80"));CreateStyledButton(v11,v7("\122\82\5\32\77\2\8\36\74\73","\69\41\34\96"),function() game.Players.LocalPlayer:WaitForChild(v7("\157\213\214\30\3\57\143\211\210\15\6","\75\220\163\183\106\98")).Value=100000000001205 -(696 + 510) ;end);CreateTitleLabel(v11,v7("\37\191\159\119\255\16\191\142\119\254\3\183\142\39\216\17\169","\185\98\218\235\87"));CreateStyledButton(v11,v7("\236\57\51\166\248\171\216\40\103\206\223\190\200\52","\202\171\92\71\134\190"),function() game.Players.LocalPlayer:WaitForChild(v7("\14\192\33\141\25\192\63\155","\232\73\161\76")):WaitForChild(v7("\157\216\81\73\83\147\216\86\94\22","\126\219\185\34\61")).Value=1;end);CreateTitleLabel(v11,v7("\46\215\4\50\77\116\225\238\28\218\97\119\102\114\163\180","\135\108\174\62\18\30\23\147"));CreateStyledButton(v11,v7("\146\236\38\206\12\171\115\224\163\224","\167\214\137\74\171\120\206\83"),function() local v42=0;local v43;while true do if (v42==0) then v43=0 + 0 ;while true do if (v43==(0 -0)) then v9:Destroy();loop=false;break;end end break;end end end);
